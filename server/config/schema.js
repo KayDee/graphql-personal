@@ -1,10 +1,10 @@
-const {makeExecutableSchema} = require('graphql-tools')
+import {makeExecutableSchema} from 'graphql-tools'
 let BASIC_INFO = require('./data/basic')
 
-let { Query } = require('./types/types.graphql')
+import { Query } from './types/types'
 
 let typeDefs = Query
-console.log(BASIC_INFO)
+console.log(Query)
 
 let resolvers = {
   Query: {
@@ -14,7 +14,5 @@ let resolvers = {
 }
 
 let schema = makeExecutableSchema({ typeDefs, resolvers })
-
-
 
 module.exports = schema

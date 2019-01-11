@@ -8,8 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon --exec babel-node server/app.js",
-    "build": "babel src —-out-dir dist",
+    "start": "nodemon --exec babel-node server/app.js --extensions \".js,.graphql\"",
+    "build": "babel server --out-dir dist --extensions \".js,.graphql\"",
     "serve": "node dist/app.js"
   },
   "dependencies": {
