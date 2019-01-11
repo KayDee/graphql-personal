@@ -2,24 +2,29 @@
   "name": "graphql-personal",
   "version": "1.0.0",
   "description": "A website about myself. (Apparently, just like this whole profile)",
-  "main": "server/app.mjs",
+  "main": "server/app.js",
   "repository": "git@github.com:KayDee/graphql-personal.git",
   "author": "KayDee",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "babel server/app.js --out-dir server/build/",
-    "start": "babel ./server/ -d ./build/ && node ./build/app.js"
+    "start": "nodemon --exec babel-node server/app.js",
+    "build": "babel src —-out-dir dist",
+    "serve": "node dist/app.js"
   },
   "dependencies": {
     "apollo-server-express": "^2.3.1",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
     "graphql-tools": "^4.0.3",
     "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3"
   }
 }
