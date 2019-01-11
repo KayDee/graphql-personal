@@ -1,14 +1,15 @@
-import {makeExecutableSchema} from 'graphql-tools'
-import BASIC_INFO from 'data/basic'
+const {makeExecutableSchema} = require('graphql-tools')
+let BASIC_INFO = require('./data/basic')
 
-import { Query } from 'types/types'
+let { Query } = require('./types/types.graphql')
 
 let typeDefs = Query
+console.log(BASIC_INFO)
 
 let resolvers = {
   Query: {
-    name: BASIC_INFO.name,
-    fullname: BASIC_INFO.fullname,
+    name: () => BASIC_INFO.name,
+    fullname: () => BASIC_INFO.fullname,
   }
 }
 

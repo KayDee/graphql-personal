@@ -1,4 +1,6 @@
-type Query{
+const Query = `type Query{
   name: String!,
   fullname: String
-}
+}`
+
+module.exports = { Query }

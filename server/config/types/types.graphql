@@ -1,6 +1,4 @@
-import Query from 'basic'
+let Query = require('./basic.graphql')
 
 
-export {
-  Query
-}
+module.exports = Query

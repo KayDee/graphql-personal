@@ -10,4 +10,4 @@ const BASIC_INFO = {
   linkedin: process.env.linkedin || '',
 }
 
-export BASIC_INFO
+module.exports = BASIC_INFO

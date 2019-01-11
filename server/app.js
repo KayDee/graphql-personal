@@ -7,7 +7,13 @@ const PORT = process.env.PORT || 4000
 let app = express()
 
 app.post('/api', graphqlHTTP({
-  schema
+  schema,
+  graphiql: true
+}))
+
+app.get('/api', graphqlHTTP({
+  schema,
+  graphiql: true
 }))
 
 app.listen(PORT, () => {
