@@ -1,5 +1,5 @@
 const Repos = `type Repos{
-  name: String!,
+  name: String,
   description: String,
   url: String,
   language: String,
