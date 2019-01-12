@@ -7,14 +7,13 @@ import {
 } from './types/types'
 
 let typeDefs = Query.concat(Repos)
-console.log(data)
+// console.log(data.repos.then(repo => console.log(repo)))
 let resolvers = {
   Query: {
     name: () => data.name,
     fullname: () => data.fullname,
     age: () => data.age,
     nickname: () => data.nickname,
-    age: () => data.age,
     github: () => data.github,
     linkedin: () => data.linkedin,
     repos: () => data.repos
