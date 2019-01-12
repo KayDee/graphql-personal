@@ -17,7 +17,7 @@ let resolvers = {
     age: () => data.age,
     github: () => data.github,
     linkedin: () => data.linkedin,
-    repos: () => data.REPO_INFO
+    repos: () => data.repos
   }
 }
 

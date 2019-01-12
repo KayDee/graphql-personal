@@ -1,5 +1,5 @@
 import BASIC_INFO from './basic'
-import repos from './repos'
+import {repos} from './repos'
 
 console.log(repos)
 module.exports = {
