@@ -1,0 +1,9 @@
+const Repos = `type Repos{
+  name: String!,
+  description: String,
+  url: String,
+  language: String,
+  stars: Int
+}`
+
+export default Repos

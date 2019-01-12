@@ -1,15 +1,23 @@
 import {makeExecutableSchema} from 'graphql-tools'
-let BASIC_INFO = require('./data/basic')
+let data = require('./data/main')
 
-import { Query } from './types/types'
+import {
+  Query,
+  Repos
+} from './types/types'
 
-let typeDefs = Query
-console.log(Query)
-
+let typeDefs = Query.concat(Repos)
+console.log(data)
 let resolvers = {
   Query: {
-    name: () => BASIC_INFO.name,
-    fullname: () => BASIC_INFO.fullname,
+    name: () => data.name,
+    fullname: () => data.fullname,
+    age: () => data.age,
+    nickname: () => data.nickname,
+    age: () => data.age,
+    github: () => data.github,
+    linkedin: () => data.linkedin,
+    repos: () => data.REPO_INFO
   }
 }
 
