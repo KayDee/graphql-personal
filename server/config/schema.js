@@ -3,10 +3,12 @@ let data = require('./data/main')
 
 import {
   Query,
-  Repos
+  Repos,
+  Langs,
 } from './types/types'
 
-let typeDefs = Query.concat(Repos)
+let typeDefs = Query.concat(Repos, Langs)
+console.log(data)
 // console.log(data.repos.then(repo => console.log(repo)))
 let resolvers = {
   Query: {
@@ -20,7 +22,9 @@ let resolvers = {
     freecodecamp: () => data.freecodecamp,
     website: () => data.website,
     hobbies: () => data.hobbies,
-    repos: () => data.repos
+    location: () => data.location,
+    repos: () => data.repos,
+    languages: () => data.LANGS,
   }
 }
 

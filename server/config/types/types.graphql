@@ -1,8 +1,10 @@
 import Query from './basic'
 import Repos from './repos'
+import Langs from './langs'
 
 
 export { 
   Query,
-  Repos
+  Repos,
+  Langs,
 }

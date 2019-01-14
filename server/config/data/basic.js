@@ -9,7 +9,7 @@ let getAge = (dateString) => {
     age--
   return String(age) + " years"
 }
-const BASIC_INFO = {
+export const BASIC_INFO = {
   name: 'Kaustubh',
   fullname: 'Kaustubh D',
   nickname: 'Kay',
@@ -19,5 +19,3 @@ const BASIC_INFO = {
   hobbies: ['Writing code', 'Reading'],
 
 }
-
-module.exports = BASIC_INFO

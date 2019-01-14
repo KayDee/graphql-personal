@@ -1,0 +1,5 @@
+const Langs = `type Langs{
+  spoken: [String],
+  computer: [String],
+}`
+export default Langs

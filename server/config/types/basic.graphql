@@ -19,7 +19,13 @@ const Query = `type Query{
 
   hobbies: [String],
 
+  location: String,
+
   repos: [Repos],
+
+  languages: Langs,
+
+  
 }`
 
 export default Query
