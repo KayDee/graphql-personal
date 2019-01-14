@@ -14,8 +14,10 @@ const BASIC_INFO = {
   fullname: 'Kaustubh D',
   nickname: 'Kay',
   age: getAge('7/10/1998'),
-  github: 'https://github.com.kaydee',
-  linkedin: process.env.linkedin || '',
+  location: 'Haryana, India',
+  description: '',
+  hobbies: ['Writing code', 'Reading'],
+
 }
 
 module.exports = BASIC_INFO

@@ -16,6 +16,10 @@ let resolvers = {
     nickname: () => data.nickname,
     github: () => data.github,
     linkedin: () => data.linkedin,
+    codepen: () => data.codepen,
+    freecodecamp: () => data.freecodecamp,
+    website: () => data.website,
+    hobbies: () => data.hobbies,
     repos: () => data.repos
   }
 }

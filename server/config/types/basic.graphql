@@ -1,10 +1,24 @@
 const Query = `type Query{
   name: String!,
+
   fullname: String,
+  
   age: String,
+  
   nickname: String,
+  
   github: String,
+  
   linkedin: String,
+  
+  codepen: String,
+  
+  freecodecamp: String,
+  
+  website: String,
+
+  hobbies: [String],
+
   repos: [Repos],
 }`
 
