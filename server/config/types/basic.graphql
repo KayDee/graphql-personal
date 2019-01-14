@@ -1,4 +1,4 @@
-const Query = `type Query{
+export const Query = `type Query{
   name: String!,
 
   fullname: String,
@@ -29,5 +29,3 @@ const Query = `type Query{
 
   projects: [Project],
 }`
-
-export default Query

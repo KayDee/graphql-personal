@@ -9,8 +9,7 @@ import {
 } from './types/types'
 
 let typeDefs = Query.concat(Repo, Langs, Project)
-console.log(data)
-// console.log(data.repos.then(repo => console.log(repo)))
+
 let resolvers = {
   Query: {
     name: () => data.name,
