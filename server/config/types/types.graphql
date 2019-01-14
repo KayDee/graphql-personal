@@ -1,10 +1,12 @@
 import Query from './basic'
-import Repos from './repos'
-import Langs from './langs'
+import { Repo } from './repos'
+import { Langs } from './langs'
+import { Project } from './projects'
 
 
 export { 
   Query,
-  Repos,
+  Repo,
   Langs,
+  Project,
 }

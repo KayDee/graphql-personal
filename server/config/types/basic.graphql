@@ -21,11 +21,13 @@ const Query = `type Query{
 
   location: String,
 
-  repos: [Repos],
+  repos: [Repo],
 
   languages: Langs,
 
-  
+  technologies: [String],
+
+  projects: [Project],
 }`
 
 export default Query

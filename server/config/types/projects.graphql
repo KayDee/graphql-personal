@@ -1,7 +1,6 @@
-export const Repo = `type Repo{
+export const Project = `type Project{
   name: String,
   description: String,
-  url: String,
   language: String,
-  stars: Int
+  url: String,
 }`

@@ -1,0 +1,21 @@
+export const TECHS = [
+  'HTML',
+  'CSS',
+  'jQuery',
+  'ReactJS',
+  'AngularJS',
+  'Firebase',
+  'Google Cloud',
+  'Google Assistant',
+  'Amazon Alexa',
+  'D3.js',
+  'MongoDB',
+  'Git',
+  'MySQL',
+  'REST',
+  'GraphQL',
+  'Ionic',
+  'Polymer',
+  'Flutter',
+  'Jekyll'
+]

@@ -3,11 +3,12 @@ let data = require('./data/main')
 
 import {
   Query,
-  Repos,
+  Repo,
   Langs,
+  Project
 } from './types/types'
 
-let typeDefs = Query.concat(Repos, Langs)
+let typeDefs = Query.concat(Repo, Langs, Project)
 console.log(data)
 // console.log(data.repos.then(repo => console.log(repo)))
 let resolvers = {
@@ -25,6 +26,8 @@ let resolvers = {
     location: () => data.location,
     repos: () => data.repos,
     languages: () => data.LANGS,
+    technologies: () => data.TECHS,
+    projects: () => data.PROJECTS
   }
 }
 
