@@ -19,6 +19,7 @@ coverage
 
 # nyc test coverage
 .nyc_output
+tests/
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -31,8 +32,8 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
-build/
-dist/
+/build/
+/dist/
 
 # Dependency directories
 node_modules/
