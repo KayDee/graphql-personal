@@ -1,3 +1,5 @@
+import 'graphiql/graphiql.css'
+
 import React from 'react'
 import GraphiQl from 'graphiql'
 
@@ -19,7 +21,5 @@ const fetcher = args => {
 }
 
 export const Main = () => (
-  <GraphiQl fetcher={fetcher} query={defaultQuery}>
-  
-  </GraphiQl>
+  <GraphiQl fetcher={fetcher} query={defaultQuery} />
 )
