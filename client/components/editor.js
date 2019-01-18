@@ -1,17 +1,17 @@
 import 'graphiql/graphiql.css'
 import GraphiQl from 'graphiql'
 
-const DEF_QUERY = `{
-  # Hellaae
-  # I made a api of my portfolio
-  
-  name
-  age
-  location
+const DEF_QUERY = `# Hellaae
+# I made a api of my portfolio
+{
+  name,
+  age,
+  location,
   languages{
     spoken
   }
-}`
+}
+`
 
 const fetcher = args => {
   return fetch('http://localhost:4000/api', {
