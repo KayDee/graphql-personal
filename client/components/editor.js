@@ -2,7 +2,7 @@ import 'graphiql/graphiql.css'
 import GraphiQl from 'graphiql'
 
 const DEF_QUERY = `{
-  # Hi, welcome
+  # Hellaae
   # I made a api of my portfolio
   
   name
