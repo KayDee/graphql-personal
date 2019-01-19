@@ -2,7 +2,7 @@
   "name": "graphql-personal",
   "version": "1.0.0",
   "description": "A website about myself. (Apparently, just like this whole profile)",
-  "main": "server/app.js",
+  "main": "server/index.js",
   "repository": "git@github.com:KayDee/graphql-personal.git",
   "author": "KayDee",
   "license": "MIT",
