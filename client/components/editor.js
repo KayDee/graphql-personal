@@ -2,11 +2,11 @@ import 'graphiql/graphiql.css'
 import GraphiQl from 'graphiql'
 
 const DEF_QUERY = `# Hellaae
-# I made a api of my portfolio
+# This is a graphql api about myself
 {
-  name,
-  age,
-  location,
+  name
+  age
+  location
   languages{
     spoken
   }
@@ -16,6 +16,7 @@ const DEF_QUERY = `# Hellaae
 const fetcher = args => {
   return fetch('http://localhost:4000/api', {
     method: 'post',
+    headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(args)
   }).then(res => res.json())
 }

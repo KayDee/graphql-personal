@@ -4,10 +4,13 @@
  */
 .graphiql-container .resultWrap { border-left-color: #313335 !important; }
 .graphiql-container .editorWrap .topBar { background: #313335; border-color: #313335; }
-.graphiql-container .editorWrap .topBar .execute-button { background: #313335; box-shadow: 0 3px 5px rgba(0,0,0,0.4); border: none; }
+.graphiql-container .editorWrap .topBar .execute-button { background: #313335; box-shadow: none; border: none; }
 .graphiql-container .editorWrap .topBar .execute-button svg { fill: #9C9E9E; }
+.graphiql-container .editorWrap .topBarWrap { box-shadow: 0 3px 6px rgba(0,0,0,0.4); z-index: 15;}
+.graphiql-container .editorWrap .topBarWrap .docExplorerShow { background: #313335; border-color: #313335; color: rgb(56, 148, 218); }
+.graphiql-container .editorWrap .topBarWrap .docExplorerShow:before{ border-color: rgb(56, 148, 218); }
 
-.graphiql-container .editorWrap .toolbar .toolbar-button { background: #313335; box-shadow: 0 3px 5px rgba(0,0,0,0.4); border: none; color: #9C9E9E; }
+.graphiql-container .editorWrap .toolbar .toolbar-button { background: #313335; box-shadow: 0 3px 5px rgba(255,255,255,0.4); border: none; color: #9C9E9E; }
 
 .graphiql-container .editorWrap .editorBar .variable-editor .variable-editor-title { background: #313335; border-color: #313335; }
 
@@ -36,6 +39,7 @@
 .graphiql-container .cm-s-darcula span.cm-bracket { color: #A9B7C6 !important; }
 .graphiql-container .cm-s-darcula span.cm-builtin { color: #FF9E59 !important; }
 .graphiql-container .cm-s-darcula span.cm-special { color: #FF9E59 !important; }
+.graphiql-container .cm-s-darcula span.cm-punctuation { color: rgb(173, 182, 192) !important; }
 
 .graphiql-container .cm-s-darcula .CodeMirror-cursor { border-left: 1px solid #A9B7C6 !important; }  
 .graphiql-container .cm-s-darcula .CodeMirror-activeline-background { background: #323232 !important; } 
@@ -53,7 +57,8 @@
   background-color: #3B3E3F  !important;
 }
 
-.CodeMirror-hints.darcula .CodeMirror-hint-active {
+.CodeMirror .CodeMirror-hints.darcula .CodeMirror-hint-active {
   background-color: #494D4E  !important;
   color: #9C9E9E  !important;
 }
+/* .CodeMirror .CodeMirror-code > div, .CodeMirror .CodeMirror-code > pre { padding-left: 5px; } */
