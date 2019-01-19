@@ -1,6 +1,9 @@
 # graphql-personal
 A website about myself. (Apparently, just like this whole profile)
 
+The api is a graphql api.
+The frontend is a preact application
+
 This repo has the source code for the api and the website
 
-You can check it out [here](https://kaydee.github.io/graphql-personal)
+Check it out [here](https://kaydee.github.io/graphql-personal)
