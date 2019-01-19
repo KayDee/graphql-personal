@@ -14,7 +14,7 @@ const DEF_QUERY = `# Hellaae
 `
 
 const fetcher = args => {
-  return fetch('http://localhost:4000/api', {
+  return fetch('https://us-central1-glowing-sanctum-194120.cloudfunctions.net/portfolio/api', {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(args)
