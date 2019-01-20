@@ -6,4 +6,4 @@ The frontend is a preact application
 
 This repo has the source code for the api and the website
 
-Check it out [here](https://kaydee.github.io/graphql-personal)
+Check it out [here](https://kaustubhd.github.io/graphql-personal)
