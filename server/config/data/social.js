@@ -3,5 +3,5 @@ export const SOCIAL_INFO = {
   linkedin: process.env.linkedin || '',
   codepen: process.env.codepen || '',
   freecodecamp: process.env.freecodecamp || '',
-  website: 'https://kaydee.github.io',
+  website: 'https://kaustubhd.github.io',
 }
