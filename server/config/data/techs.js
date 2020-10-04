@@ -3,7 +3,6 @@ export const TECHS = [
   'CSS',
   'jQuery',
   'ReactJS',
-  'AngularJS',
   'Firebase',
   'Google Cloud',
   'Google Assistant',
@@ -16,6 +15,6 @@ export const TECHS = [
   'GraphQL',
   'Ionic',
   'Polymer',
-  'Flutter',
-  'Jekyll'
+  'Jekyll',
+  '.Net Core',
 ]
